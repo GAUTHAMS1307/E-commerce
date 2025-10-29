@@ -10,6 +10,14 @@ export interface Product {
   category: string;
 }
 
+export interface ProductResponse {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  category: string;
+}
+
 interface ProductCardProps {
   product: Product;
   onAddToCart: (product: Product) => void;

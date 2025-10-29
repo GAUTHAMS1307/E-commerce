@@ -27,14 +27,14 @@ export class MemStorage implements IStorage {
 
   private initializeProducts() {
     const mockProducts: Product[] = [
-      { id: 1, name: "Wireless Headphones", price: "89.99", image: "/api/products/1/image", category: "Electronics" },
-      { id: 2, name: "Leather Backpack", price: "129.99", image: "/api/products/2/image", category: "Accessories" },
-      { id: 3, name: "Steel Water Bottle", price: "34.99", image: "/api/products/3/image", category: "Lifestyle" },
-      { id: 4, name: "Classic Watch", price: "299.99", image: "/api/products/4/image", category: "Accessories" },
-      { id: 5, name: "Smartphone Pro", price: "899.99", image: "/api/products/5/image", category: "Electronics" },
-      { id: 6, name: "Vintage Camera", price: "179.99", image: "/api/products/6/image", category: "Electronics" },
-      { id: 7, name: "Premium Yoga Mat", price: "49.99", image: "/api/products/7/image", category: "Lifestyle" },
-      { id: 8, name: "Modern Desk Lamp", price: "64.99", image: "/api/products/8/image", category: "Home" },
+      { id: 1, name: "Wireless Headphones", price: 89.99, image: "/api/products/1/image", category: "Electronics" },
+      { id: 2, name: "Leather Backpack", price: 129.99, image: "/api/products/2/image", category: "Accessories" },
+      { id: 3, name: "Steel Water Bottle", price: 34.99, image: "/api/products/3/image", category: "Lifestyle" },
+      { id: 4, name: "Classic Watch", price: 299.99, image: "/api/products/4/image", category: "Accessories" },
+      { id: 5, name: "Smartphone Pro", price: 899.99, image: "/api/products/5/image", category: "Electronics" },
+      { id: 6, name: "Vintage Camera", price: 179.99, image: "/api/products/6/image", category: "Electronics" },
+      { id: 7, name: "Premium Yoga Mat", price: 49.99, image: "/api/products/7/image", category: "Lifestyle" },
+      { id: 8, name: "Modern Desk Lamp", price: 64.99, image: "/api/products/8/image", category: "Home" },
     ];
 
     mockProducts.forEach(product => this.products.set(product.id, product));

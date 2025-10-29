@@ -15,7 +15,7 @@ interface CartItemResponse {
   product: {
     id: number;
     name: string;
-    price: string;
+    price: number;
     image: string;
     category: string;
   };
@@ -43,7 +43,7 @@ export default function Checkout() {
     id: item.id,
     productId: item.productId,
     name: item.product.name,
-    price: parseFloat(item.product.price),
+    price: item.product.price,
     image: item.product.image,
     quantity: item.quantity,
   }));
@@ -64,7 +64,7 @@ export default function Checkout() {
           id: item.id,
           productId: item.productId,
           name: item.product.name,
-          price: parseFloat(item.product.price),
+          price: item.product.price,
           image: item.product.image,
           quantity: item.quantity,
         })),

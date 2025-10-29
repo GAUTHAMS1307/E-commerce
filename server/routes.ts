@@ -173,7 +173,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       );
 
       const total = items.reduce((sum, item) => {
-        const price = parseFloat(item.product?.price || "0");
+        const price = item.product?.price || 0;
         return sum + price * item.quantity;
       }, 0);
 
